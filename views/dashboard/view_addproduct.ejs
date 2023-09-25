@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="../assets/Bootstrap/css/bootstrap.min.css" />
+
+<%- include('./header.ejs') %>
+<div class="container-fluid p-0">
+  <div class="row m-0 p-0">
+    <div class="col-3 p-0"><%- include('./left.ejs') %></div>
+    <% if(product1.length>0){ %>
+    <div class="col-9 border border-info">
+      <table >
+        <tr>
+            <th>New ProductName</th>
+            <th>ProductPrice</th>
+            <th>ProductImage</th>
+           
+            
+        </tr>
+
+        <%for(var i=0; i<product1.length; i++){%>
+        <tr>
+            <td><%= product1[i].ProductName %></td>
+            <td><%= product1[i].ProductPrice  %></td>
+            <td><%= product1[i].ProductImage %></td> 
+            <td><a href="/delete1/<%= product1[i]._id %>">Delete </a> 
+              <a href="/edit/<%= product1[i]._id %>">edit </a>
+
+        </tr>
+        <% } %>
+        
+      </table>
+      <% } else { %>
+        No record found
+
+        <%} %>
+    </div>
+  </div>
+</div>

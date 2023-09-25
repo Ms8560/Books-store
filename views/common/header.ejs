@@ -1,0 +1,86 @@
+<div class="container-fluid p-0 box" >
+  <nav class="navbar navbar-expand-sm navbar-light  p-0 ">
+    <a class="navbar-brand ms-3"><img src="../assets/kitaab-logo.png" width="80"
+      height="80" ></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#demo">
+     <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-start str-font ms-3  -danger " id="demo">
+   <ul class="navbar-nav">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Books</a>
+      <ul class="dropdown-menu">
+        
+        <li><a class="dropdown-item" href="/bestsellers">Bestsellers</a></li>
+        <li><a class="dropdown-item" href="/fiction">Fiction books</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Upcoming books</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="https://play.google.com/store/games?utm_source=apac_med&utm_medium=hasem&utm_content=Oct0121&utm_campaign=Evergreen">Instal Recuriter app</a></li>
+        <li><a class="dropdown-item" href="/new"> New Arrival</a></li>
+      </ul>
+    </li>
+
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Company</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="/About">About us</a></li>
+        
+        <li><a class="dropdown-item" href="/Contact">Contact us</a></li>
+        
+      </ul>
+    </li> 
+  </ul> 
+
+
+  <div class=" w-100 text-end ">
+    <a href="/index">
+      <button class="btn btn-secondary">Home</button>
+    </a>
+   
+      <button type="button" class="btn btn-secondary" class="btn btn-secondary " data-bs-target="#signmodal" data-bs-toggle="modal">signin</button>
+      <div class="modal fade " id="signmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content bg-primary-subtle">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Sign-in</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body bg-danger-subtle">                                                                                                                                                                                                                                                                                                                                                                                              
+                <form class="px-4 py-3" action="/login" method="post">
+                    <div class="mb-3">
+                      <label for="exampleDropdownFormEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com" name="email"> 
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleDropdownFormPassword1" class="form-label">Password</label>
+                      <input name="password" type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                    </div>
+                    <div class="mb-3">
+                      <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                        <label class="form-check-label" for="dropdownCheck">
+                          Remember me
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary "  onclick="window.location.href='/login'" >Sign in</button>
+                  </form>
+            </div>
+            <div class="modal-footer">
+                <a href="/dashboard/index" target="_blank">Dashboard</a>
+                <button type="button" class="btn btn-primary" onclick="window.location.href='/register'" target="blank">Create new account</button>
+              </div>
+          </div>
+        </div>
+      </div>
+  
+      
+      </div>
+  </div>
+  </nav>  
+</div>
+

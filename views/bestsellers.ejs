@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="assets/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/index.css">
+
+
+<!-- header starts -->
+<%-include('common/header.ejs')%>
+<!-- header end -->
+
+
+<div class="container-fluid img">
+    <div class="col fs-1 mb-2 mt-3 bg-success "> Trending Books</div>
+    
+    
+         <div class="row">
+          <% if(product1.length>0){ %>
+          <% for(var i=0; i<product1.length; i++){ %>
+    <div class="col-4"><img src="<%= product1[i].ProductImage %>"><p>Vagabond(Vizbing Edition),vol1</p></div>
+    <!-- <div class="col"><p>Grandmaster of Demonic</p><img src="assets/9781685798406.jpg"></div>
+    <div class="col"><p>20th Century Boys Vol1</p><img src="assets/9781421599618.jpg"></div>
+    <div class="col"><p>Chainsaw man vol.1</p><img src="assets/9781974709939.jpg"></div> -->
+    <h6 class="btn btn-info" ><a href="/details/<%= movies1.contact %>">More</a></h6>
+    </div>
+    <%} %>
+    <%} else{%>
+no record found
+<%} %>
+
+    <!-- <div class="row ">
+    <div class="col"><p>SpyX family,vol9</p><img src="assets/9781974736287.jpg "></div>
+    <div class="col"><p>It Starts with Us</p><img src="assets/9781501110368.jpg"></div>
+    <div class="col"><p>Bihar Diaries</p><img src="assets/9780143444350.jpg"></div>
+    <div class="col"><p>Indian Polity For Civil </p><img src="assets/9789354600357.jpg"></div>
+         </div>   
+
+         <div class="row ">
+            <div class="col"><p>Do It Today:</p><img src="assets/9780143333623.jpg "></div>
+            <div class="col"><p>Your Time Will Come</p><img src="assets/9789354400704.jpg"></div>
+            <div class="col"><p>You Can</p><img src="assets/9789389931846.jpg"></div>
+            <div class="col"><p>Do Epic Shit </p><img src="assets/9789391165482.jpg"></div>
+                 </div>    -->
+        </div>
+
+
+        <!-- footer starts -->
+        <%-include('common/footer.ejs')%>
+         <!-- footer end -->

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+    <%- include('./common/header.ejs') %> 
+
+    <!-- crousel starts -->
+
+    <div class="container-fluid mt-3">
+        <div id="services_main_img" class="carousel slide d-block" data-bs-ride="carousel">
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active "data-bs-interval="600">
+                            <img src="assets/estee-janssens-RARH8b7N-fw-unsplash.jpg" alt="Los Angeles" class=" w-100 " style="height:380px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="assets/jaredd-craig-HH4WBGNyltc-unsplash.jpg" alt="Chicago" class=" w-100 " style="height: 380px;">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="assets/varad-parulekar-Gls5DB9lk6s-unsplash.jpg" alt="Chicago" class=" w-100 " style="height: 380px;">
+                        </div>
+                    </div>
+        
+                    <!-- crousel ends -->
+
+<!-- trending books -->
+    <div class="container-fluid p-0 img">
+<div class="col fs-1 mb-2 mt-3 clr"> Trending Books</div>
+
+     <div class="row">
+<div class="col"><p>Vagabond(Vizbing Edition),vol1</p><a href="/allbooks"><img src="assets/9781421520544.jpg"></a></div>
+<div class="col"><p>Grandmaster of Demonic</p><a href="/allbooks"><img src="assets/9781685798406.jpg"></a></div>
+<div class="col"><p>20th Century Boys Vol1</p><a href="/allbooks"><img src="assets/9781421599618.jpg"></a></div>
+<div class="col"><p>Chainsaw man vol.1</p><a href="/allbooks"><img src="assets/9781974709939.jpg"></a></div>
+<div class="col"><p>SpyX family,vol9</p><a href="/allbooks"><img src="assets/9781974736287.jpg"></a></div>
+     </div>   
+    </div>
+
+<!-- trending books ends -->
+   
+<!-- banner section starts -->
+
+<div class="container-xxl p-0 mt-4 mb-4">
+
+<img src="assets/81_inr.jpg" class="d-block w-100">    
+
+
+</div>
+<!-- banner section ends -->
+
+<!-- best sellers  starts-->
+        
+<div class="container-fluid p-0 img">
+    <div class="col fs-1 mb-2 mt-2 clr">Best sellers</div>
+    
+         <div class="row">
+    <div class="col"><p>Bhagavad Gita: yatharoop</p><a href="/allbooks"><img src="assets/9780143442295.jpg"></a></div>
+    <div class="col"><p>Do it Today</p><a href="/allbooks"><img src="assets/9780143452126.jpg "></a></div>
+    <div class="col"><p>The psychology of money</p><a href="/allbooks"><img src="assets/9789390166268.jpg"></a></div>
+    <div class="col"><p>It starts with us</p><a href="/allbooks"><img src="assets/9781398518179.jpg"></a></div>
+    <div class="col"><p>Atomic Habits</p><a href="/allbooks"><img src="assets/9781847941831.jpg"></a></div>
+         </div>   
+        </div>
+        <!-- best sellers end -->
+
+        <!-- upcoming books -->
+        <div class="container-fluid p-0 img">
+            <div class="col fs-1 mb-2 mt-2 clr">Upcoming Books</div>
+            
+                 <div class="row ">
+            <div class="col"><p>Vampires of El Norte</p><a href="/allbooks"><img src="assets/images.jpeg"class="d-block w-100"></a></div>
+            
+            <div class="col"><p>Darling Girls:A Novel</p><a href="/allbooks"><img src="assets/images (4).jpeg" class="d-block w-100"></a></div>
+            <div class="col"><p>Holy</p><a href="/allbooks"><img src="assets/images (1).jpeg" class="d-block w-100"></a></div>
+            <div class="col"><p>Sword Catcher</p><a href="/allbooks"><img src="assets/images (2).jpeg" class="d-block w-100"></a></div>
+            <div class="col"><p>The armour of light</p><a href="/allbooks"><img src="assets/images (3).jpeg" class="d-block w-100"></a></div>
+                 </div>   
+                </div>
+
+                <!-- autors start -->
+
+
+                <div class="container-fluid p-0 img">
+                    <div class="col fs-1 mb-2 mt-3 clr"> Authors</div>
+                    
+                         <div class="row">
+                    <div class="col"><img src="assets/arundhatistory_647_100316054702.jpg" class="w-100 d-block"><p>Arundati roy</p></div>
+                    
+                    <div class="col"><img src="assets/dr-shashi-tharoor-2.jpg" class="w-100 d-block"><p> Dr shashi tharoor</p></div>
+                    
+                    <div class="col"><img src="assets/stephen-edwin-king.jpg" class="w-100 d-block"><p>Stephen king</p></div>
+                    
+                    
+                         </div>   
+                        </div>
+                
+<!-- authors ends -->
+
+    <%- include('./common/footer.ejs') %>
+</body>
+</html>

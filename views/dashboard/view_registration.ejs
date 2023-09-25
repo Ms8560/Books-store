@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="../assets/Bootstrap/css/bootstrap.min.css" />
+
+<%- include('./header.ejs') %>
+<div class="container-fluid p-0">
+  <div class="row m-0 p-0">
+    <div class="col-3 p-0"><%- include('./left.ejs') %></div>
+    <% if(viewregis.length>0){ %>
+    <div class="col-9 border border-info table-responsive">
+      <table class="table" border="1">
+        <tr>
+            <th>fullname</th>
+            <th>Email ID</th>
+            <th>contact</th>
+            <th>Password</th>
+            <th>Confirm Password</th>
+            
+        </tr>
+
+        <%for(var i=0; i<viewregis.length; i++){%>
+        <tr>
+            <td><%= viewregis[i].fullname %></td>
+            <td><%= viewregis[i].email  %></td>
+            <td><%= viewregis[i].contact %></td>
+            <td><%= viewregis[i].password %></td>
+            <td><%= viewregis[i].repeatpassword %></td>
+            
+            <td><a href="/delete/<%= viewregis[i]._id %>">Delete </a> 
+              <a href="/edit/<%= viewregis[i]._id %>">edit</a></td>
+            
+           
+            
+        </tr>
+
+        <% }%>
+        
+      </table>
+
+      <%} else {%>
+        No record found
+
+        <%}%>
+    </div>
+  </div>
+</div>
